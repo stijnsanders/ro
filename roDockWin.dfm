@@ -1,0 +1,26 @@
+object DockWin: TDockWin
+  Left = 449
+  Top = 183
+  Width = 312
+  Height = 218
+  BorderStyle = bsSizeToolWin
+  Caption = 'DockWin'
+  Color = clBtnFace
+  DockSite = True
+  DragKind = dkDock
+  DragMode = dmAutomatic
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  FormStyle = fsStayOnTop
+  OldCreateOrder = False
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnDockOver = FormDockOver
+  OnGetSiteInfo = FormGetSiteInfo
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 16
+end

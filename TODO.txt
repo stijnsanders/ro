@@ -1,0 +1,39 @@
+ISSUES
+- verder Delphi7-vaardig maken:
+  - IdentDock is een poging ondernomen om om te zetten, maar werkt mogelijk nog niet
+  - ConnectionWin is de TCPClient al omgezet, maar kan veel beter
+    (veel beter! bijvoorbeeld door meer Receiveln te gebruiken?)
+- nieuw icoontje ontwerpen (en als iemand zin heeft: allemaal nieuwe graphics?)
+- centrale stylesheet gebruiken, en die laten overriden als file aanwezig of in settings
+
+BUGS
+- tab op lege ingave: AV
+
+FEATURE REQUESTS
+- auto join channels
+- persistent switches view time/code/sys/chan 
+- persistent UTF8 switch (per net/host/chan?)
+- persistent dock locations
+- switch ident on/off by default (misschien zelfs af by default, dan klaagt windows firewall niet)
+- scripting framework (COM? ScriptingHost? Delphi-Script-Auto-Compile-Ding?)
+- switch windows tussen MDIChild en gewoon los venster (idee: niet Delphi's MDI gebruiken?)
+- ignore rules
+- DCC
+- COM Type Library
+- ingave met kleurtjes/bold/andere opmaak...
+- utf8 op server of network
+- 'filter' om bepaalde messages op 1 of meer channels/users te selecteren
+- 'join' link op alle channel-namen
+
+KNOWN ISSUES
+- sommige irc servers gebruiken alleen #10 als EOL
+- IdentDock tonen rechts: splitter verzetten werkt niet meer (tot een ander dock wordt gebruikt?!)
+- resize: keep scrolled down nog eens herbekijken
+- help en tutorial schrijven als de features wat zijn gestabiliseerd
+
+IDEETJES
+- units wat schikken in subdirectories
+- /who en /list output in een HTML table
+- lange URL's inkorten met "..." in het midden (en title=""? url?)
+- channel events alleen van mensen die (net) actief waren
+- on-mouse-over van een nick: alle lijnen van die persoon highlighten

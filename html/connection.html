@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Ro</title>
+<link rel="Stylesheet" href="style" type="text/css">
+</head>
+<body bgcolor="window" text="windowtext" topmargin="2" leftmargin="2" rightmargin="2" bottommargin="2">
+
+<span id="premotd">
+</span>
+
+<script>
+function toggleMotd()
+{
+	motd1.style.display=(motd1.style.display=='inline'?'none':'inline');
+	return false;
+}
+</script>
+
+<br />
+<a href="#" onclick="return toggleMotd();" style="background: activecaption; color: captiontext; text-decoration: none;"><b>MOTD:</b></a>
+For your conveniance, the <i>message of the day</i> is hidden by default but might contain important notices to users of this server. <i>Including you.</i><br />
+
+<pre id="motd1" class="motd"><div style="border: 2px menu solid; margin:0px; padding:2px;" id="motd">
+</div></pre>
+<a href="#" onclick="return toggleMotd();">Click here</a>
+to toggle the motd.<br />
+<br />
+
+</body>
+</html>

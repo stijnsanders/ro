@@ -1,0 +1,122 @@
+<html>
+<head>
+<style>
+
+BODY {
+	font-family: Tahoma, sans-serif;
+	font-size: 11px;
+	color: windowtext;
+	margin: 4px;
+	border: 1px inset;
+}
+FORM, INPUT, TEXTAREA {
+	font-family: Tahoma, sans-serif;
+	font-size: 11px;
+	color: windowtext;
+}
+DL DT {
+	color: buttontext;
+	font-weight:bold;
+	padding-top: 6px;
+	padding-left: 4px;
+}
+DL DD {
+	margin-left: 32px;
+}
+
+P.header {
+	margin: -4px;
+	margin-bottom: -16px;
+	padding: 2px;
+	padding-left: 8px;
+	font-family: Tahoma, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	background: appworkspace;
+	color: buttonhighlight;
+}
+
+</style>
+<script>
+
+function doRotateDsp()
+{
+	dspRotateTotal.innerText=document.all.RotateBlockCount.value*document.all.RotateBlockSize.value;
+}
+
+</script>
+</head>
+<body bgcolor="buttonface" onload="doRotateDsp();">
+<form>
+
+	<!-- <input type="checkbox" id="xxx" checked><label for="xxx"> </label><br /> -->
+
+<p class="header">Closing</p>
+
+<dl>
+<dt>Application</dt>
+<dd>
+	<input type="checkbox" id="VerifClose" checked><label for="VerifClose"> Application close: verify (OK/Cancel)</label><br />
+	<input type="checkbox" id="VerifShutdown" checked><label for="VerifShutdown"> Windows shutdown/log off: verify (OK/Cancel)</label><br />
+</dd>
+<dt>Connection window</dt>
+<dd>
+	<input type="checkbox" id="VerifConClose" checked><label for="VerifConClose"> Connection close: verify (OK/Cancel)</label><br />
+	<label for="DftCloseMsg">Default connection close message:</label><br />
+	<input type="text" id="DftCloseMsg" style="width:100%;" /><br />
+</dd>
+<dt>Channel/query window</dt>
+<dd>
+	<input type="checkbox" id="VerifChanClose"><label for="VerifChanClose"> Channel leave: verify (OK/Cancel)</label><br />
+	<label for="DftPartMsg">Default channel leave message:</label><br />
+	<input type="text" id="DftPartMsg" style="width:100%;" /><br />
+	
+</dd>
+</dl>
+
+<p class="header">Display</p>
+
+<dl>
+<dt>Main window</dt>
+<dd>
+	<input type="checkbox" id="MainWinSavePos" checked><label for="MainWinSavePos"> Save position on close / Open with last position</label><br />
+	<input type="checkbox" id="StayOnTop"><label for="StayOnTop"> Stay on top</label><br />
+</dd>
+<dt>Transcript display</dt>
+<dd>
+	<label for="RotateBlockSize">Rotation: block size (# lines)</label><br />
+	<input type="text" id="RotateBlockSize" size="10" value="50" onchange="doRotateDsp();" /><br />
+	<label for="RotateBlockCount">Rotation: block count (# blocks)</label><br />
+	<input type="text" id="RotateBlockCount" size="10" value="25" onchange="doRotateDsp();" /><br />
+	&raquo; Maximum # lines on display: <span id="dspRotateTotal"></span><br />
+	<script>doRotateDsp();</script>
+</dd>
+</dl>
+
+<p class="header">Highlight</p>
+
+<dl>
+<dt></dt>
+<dd>
+	
+</dd>
+
+</dl>
+
+<p class="header">IRC</p>
+
+<dl>
+<dt>Notices</dt>
+<dd>
+	Send <b>NOTICE</b> messages to:<br />
+	<input type="radio" name="NoticesTarget" id="NoticesTarget1" checked /><label for="NoticesTarget1"> target by sender</label><br />
+	<input type="radio" name="NoticesTarget" id="NoticesTarget2" /><label for="NoticesTarget2"> connection window</label><br />
+	<input type="radio" name="NoticesTarget" id="NoticesTarget3" /><label for="NoticesTarget3"> </label><br />
+	<input type="radio" name="NoticesTarget" id="NoticesTarget4" /><label for="NoticesTarget4"> </label><br />
+	<input type="radio" name="NoticesTarget" id="NoticesTarget5" /><label for="NoticesTarget5"> </label><br />
+</dd>
+</dl>
+
+</form>
+</body>
+</html>

@@ -1,0 +1,69 @@
+BODY {
+	font-family: Verdana, sans-serif;
+	font-size: 13px;
+	color: windowtext;
+	background: window;
+}
+A {
+	color: #006699;
+	background: window;
+}
+A:hover {
+	color: window;
+	background: #006699;
+	text-decoration: none;
+}
+.time {
+	display: none;
+	color: #006699;
+	background: window;
+	font-family: Tahoma, sans-serif;
+	font-weight: normal;
+}
+.motd {
+	font-family: monospace;
+	padding: 2px;
+	margin: 0px;
+	border: solid menu 2px;
+	white-space: nowrap;
+}
+.error {
+	color: #000000;
+	background: #00CCFF;
+}
+.code {
+	display: none;
+	font-family: Tahoma, sans-serif;
+}
+
+.network {
+	color: #006699;
+	background: window;
+	font-weight: bold;
+}
+.system {
+	display: none;
+	color: #006699;
+	background: window;
+}
+.event {
+	color: #003366;
+	background: window;
+}
+.parameters {
+	color: #006699;
+	background: window;
+	font-family: Tahoma, sans-serif;
+}
+.highlight {
+	padding: 0px;
+	margin-left: -1px;
+	margin-right: -1px;
+	border: solid #00CCFF 1px;
+}
+.highlight1 {
+	padding: 0px;
+	margin-left: -1px;
+	margin-right: -1px;
+	border: solid #FFCC00 1px;
+}
