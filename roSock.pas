@@ -321,7 +321,7 @@ begin
   l:=SizeOf(TSocketAddress);
   FillChar(Result,l,#0);
   if getsockname(FSocket,Result,l)=SOCKET_ERROR then
-    RaiseLastWSAError;
+    ;//RaiseLastWSAError;
 end;
 
 function TTcpSocket.GetLocalHostName: string;
