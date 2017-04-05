@@ -4,8 +4,8 @@ interface
 
 uses SysUtils, Classes;
 
-{xxx$D-}
-{xxx$L-}
+{$D-}
+{$L-}
 
 type
   PSocketAddress=^TSocketAddress;
